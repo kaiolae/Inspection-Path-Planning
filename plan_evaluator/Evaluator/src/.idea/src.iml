@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanInterpreterBoxOrder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanCoverageEstimator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/moeaCoverageRunner.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanEnergyEvaluator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanInterpreterBoxOrder.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ContourTracing.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanCoverageEstimator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PlanEnergyEvaluator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ContourTracing.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/CameraEstimator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/OsgHelpers.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/SceneKeeper.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/GeodeFinder.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/KeyboardInputHandler.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/HelperMethods.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/SceneKeeper.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/OsgHelpers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/CameraEstimator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/GeodeFinder.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/TriangleData.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/KeyboardInputHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/TriangleData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Utility_Functions/src/HelperMethods.cpp" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
