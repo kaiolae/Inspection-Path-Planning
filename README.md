@@ -9,7 +9,13 @@ The most common way to use the planner will probably be the command:
 
 This will generate a plan for the given 3D model and store the results in the output folder. It will take some time, depending on the parameters defined for the optimization. The input model has to be compatible with OpenScenegraph. If you have problems, take a look at the README inside plan_optimizer/
 
--------
+-------------------------
+Dependency-free running
+
+If you prefer to not install any Python libraries, and you will not modify any code, the basic planning functionality is available in the executable executable/optimize_coverage/optimize_coverage. It takes exactly the same arguments as optmize_coverage.py (see above).
+
+
+----------------------
 
 The code for optimizing inspection plans is written in Python, and that for evaluating plans is in C++.
 A wrapper for the C++ code is auto-generated with the SWIG framework.
