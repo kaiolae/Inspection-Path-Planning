@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse
 import os
 import pickle
@@ -43,7 +44,7 @@ def selectViewpoint(structurePath):
                                   "In the following scene, adjust the camera until you are satisfied."
                                   "Then press the w key to store the viewpoint, followed by esc to continue")
     # Reading in any existing viewpoints
-    viewpointFile = open(Constants_and_Datastructures.VIEWPOINTS_FILE, 'r')
+    viewpointFile = open(Constants_and_Datastructures.VIEWPOINTS_FILE, 'w+')
     viewpointDict = yaml.load(viewpointFile)
     viewpointFile.close()
 

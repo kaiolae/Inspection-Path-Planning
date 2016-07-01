@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 from settings import Utilities
 
 __author__ = 'kaiolae'

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #Many methods for plotting data from optimization runs. Not necessarry if you just want to generate plans,
 #but may come in handy if you want to do some performance analyses.
 

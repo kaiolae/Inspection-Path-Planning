@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #To store pictures of plans, one has to determine a viewpoint that the picture will be taken from.
 #This script allows you to store a viewpoint for a 3D structure, which will be applied in the future
 #any time a picture of that structure is stored.

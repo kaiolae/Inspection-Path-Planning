@@ -76,7 +76,11 @@ local.properties
 *CXX.includecache
 *perf.data*
 
-#Local files we want to ignore
-complete_coverage_main
+#Local files and folders we want to ignore
+plan_optimizer/build
+plan_optimizer/.idea
+viewpoints.yml
+optimize_coverage.spec
+
 
 

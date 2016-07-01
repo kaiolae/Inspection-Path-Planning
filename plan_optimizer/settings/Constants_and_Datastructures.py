@@ -1,5 +1,7 @@
 import ConfigParser
 
+import sys
+
 __author__ = 'kaiolae'
 
 import os
@@ -26,14 +28,19 @@ RESULTS_ROOT = os.path.join(os.path.split(SOURCE_CODE_ROOT)[0],"results")
 SYSTEM_CONFIGURATIONS = ConfigParser.ConfigParser()
 SYSTEM_CONFIGURATIONS.read(os.path.join(SOURCE_CODE_ROOT,"settings/project_config.ini"))
 
-SETTINGS_DIR = os.path.dirname(__file__)
-COVERAGE_ESTIMATOR_PROJECT_BASE = os.path.join(SETTINGS_DIR,'/home/kai/inspection_planner/plan_evaluator')#'../../plan_evaluator/')
+# determine if application is a script file or frozen exe
+if getattr(sys, 'frozen', False):
+    COVERAGE_ESTIMATOR_PROJECT_BASE = os.path.join(os.path.dirname(sys.executable),'../../../plan_evaluator')
+else:
+    COVERAGE_ESTIMATOR_PROJECT_BASE = os.path.join(os.path.dirname(__file__),'../../plan_evaluator')
+
 MOEA_COVERAGE_FOLDER = os.path.join(COVERAGE_ESTIMATOR_PROJECT_BASE, 'Evaluator/src/')
 COMMON_SOURCES_FOLDER = os.path.join(COVERAGE_ESTIMATOR_PROJECT_BASE, 'Utility_Functions/src/')
 PATH_TO_CONSTANTS_FILE = os.path.join(COMMON_SOURCES_FOLDER, "Constants.h")
 
 # A single file where we store camera viewpoints for each model - pnly used for plotting.
-VIEWPOINTS_FILE = os.path.join(SETTINGS_DIR,'../../3d_models/viewpoints.yml')
+#VIEWPOINTS_FILE = os.path.join(COVERAGE_ESTIMATOR_PROJECT_BASE,'../3d_models/viewpoints.yml')
+VIEWPOINTS_FILE = "viewpoints.yml"
 
 #Relative paths to subfolders where some results are stored
 populationsSubFolder = "populations/"

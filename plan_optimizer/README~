@@ -1,5 +1,23 @@
-Using the DEAP-EA framework to set up a multiobjective optimizer for the problem of subsea inspection coverage.
-The evaluation-function and NSGA2-selection code are in C++ to speed things up.
+These scripts are written for Python, which is most likely already installed on your computer. You can run them with:
+
+python <scriptname.py>
+
+or, if you prefer, it should work to call them as:
+
+./<scriptname.py>
+
+If you see an error message such as
+
+    "ImportError: No module named 'ModuleName'",
+
+ you are missing a Python module (a library), which you need to install. But fear not, this is easy!
+
+The easiest way is to use pip, which you probably already have on your computer:
+https://pip.pypa.io/en/stable/installing/
+
+Use it this way:
+
+    pip install ModuleName
 
 Descriptions of the main runnables:
 
@@ -79,4 +97,16 @@ Optional arguments:
 	--circulating			   If this argument is provided, the plan is visualized by circulating a "camera" automatically around it. This can be useful for generating videos of plans. If not, you control the "camera" for visualization yourself.
 
 Usage example: python VisualizePlan.py -i results/oil_manifold --id 5
+
+
+----------
+model_viewpoint_selector.py
+
+To store pictures of plans, one has to determine a viewpoint that the picture will be taken from. This script allows you to store a viewpoint for a 3D structure, which will be applied in the future any time a picture of that structure is stored.
+
+Mandatory argument:
+	-i INPUT_FILE			Path to the 3D-structure we want to select a viewpoint for. Whenever this path is used as input to the optimizer, the selected viewpoint will be used for plan images.
+
+example: python mode_viewpoint_selector.py -i 3d_models/oil_manifold.stl
+
 	

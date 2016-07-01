@@ -3,6 +3,12 @@ See the README in that folder for details.
 
 The optimization code is written in Python 2.
 
+The most common way to use the planner will probably be the command:
+
+./plan_optimizer/optimize_coverage.py -i INPUT_3D_MODEL -o OUTPUT_FOLDER
+
+This will generate a plan for the given 3D model and store the results in the output folder. It will take some time, depending on the parameters defined for the optimization. The input model has to be compatible with OpenScenegraph. If you have problems, take a look at the README inside plan_optimizer/
+
 -------
 
 The code for optimizing inspection plans is written in Python, and that for evaluating plans is in C++.

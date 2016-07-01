@@ -1,5 +1,23 @@
-Using the DEAP-EA framework to set up a multiobjective optimizer for the problem of subsea inspection coverage.
-The evaluation-function and NSGA2-selection code are in C++ to speed things up.
+These scripts are written for Python, which is most likely already installed on your computer. You can run them with:
+
+python <scriptname.py>
+
+or, if you prefer, it should work to call them as:
+
+./<scriptname.py>
+
+If you see an error message such as
+
+    "ImportError: No module named 'ModuleName'",
+
+ you are missing a Python module (a library), which you need to install. But fear not, this is easy!
+
+The easiest way is to use pip, which you probably already have on your computer:
+https://pip.pypa.io/en/stable/installing/
+
+Use it this way:
+
+    pip2 install ModuleName
 
 Descriptions of the main runnables:
 
