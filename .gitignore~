@@ -6,10 +6,6 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
 
 # Precompiled Headers
 *.gch
@@ -75,14 +71,6 @@ local.properties
 #Others
 *CXX.includecache
 *perf.data*
-
-#Local folders we want to ignore
-deap_src/
-lemon_tutorials/
-nsga2/
-osg_tests/
-code_samples/
-OpenGL-tutorial/
 
 #Local files we want to ignore
 complete_coverage_main

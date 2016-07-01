@@ -15,7 +15,6 @@ namespace vizkit3d_normal_depth_map {
 
 ImageViewerCaptureTool::ImageViewerCaptureTool(uint width, uint height) {
 
-	std::cout << "Cam constructor " << width << ", " << height << std::endl;
     // initialize the hide viewer;
     initializeProperties(width, height);
 }

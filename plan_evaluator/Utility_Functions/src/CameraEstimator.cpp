@@ -187,11 +187,8 @@ void storeViewToFile(const osg::ref_ptr<osg::Node> scene, const osg::Matrixd& vi
 	scene->getOrCreateStateSet()->setAttributeAndModes(lightModel.get());
 
 	vizkit3d_normal_depth_map::ImageViewerCaptureTool* screenGrabber = new vizkit3d_normal_depth_map::ImageViewerCaptureTool(IMG_WIDTH,IMG_HEIGHT);
-	std::cout << "grapper set up" << std::endl;
 	screenGrabber->setViewMatrix(viewMatrix);
-	std::cout << "matrix set up" << std::endl;
 	osg::ref_ptr<osg::Image> capturedImage = screenGrabber->grabImage(scene);
-	std::cout << "image grabbed" << std::endl;
 
 
 	osgDB::writeImageFile(*capturedImage,fileName);

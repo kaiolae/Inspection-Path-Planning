@@ -48,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanCoverageEstimator.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlanCoverageEstimator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlanCoverageEstimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
@@ -56,6 +56,16 @@
               <folding>
                 <element signature="e#93#127#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraEstimator.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,21 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageViewerCaptureTool.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageViewerCaptureTool.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="27" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/Constants.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="193">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -172,10 +172,8 @@
         <option value="$PROJECT_DIR$/PlanInterpreterBoxOrder.h" />
         <option value="$PROJECT_DIR$/ContourTracing.cpp" />
         <option value="$PROJECT_DIR$/moeaCoverageRunner.cpp" />
-        <option value="$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.cpp" />
         <option value="$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.h" />
         <option value="$PROJECT_DIR$/../../Utility_Functions/src/Constants.h" />
-        <option value="$PROJECT_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp" />
         <option value="$PROJECT_DIR$/../../Utility_Functions/src/KeyboardInputHandler.h" />
         <option value="$PROJECT_DIR$/../../Utility_Functions/src/OsgHelpers.cpp" />
         <option value="$PROJECT_DIR$/../../Utility_Functions/src/TriangleData.cpp" />
@@ -187,6 +185,8 @@
         <option value="$PROJECT_DIR$/PlanInterpreterBoxOrder.cpp" />
         <option value="$PROJECT_DIR$/PlanEnergyEvaluator.cpp" />
         <option value="$PROJECT_DIR$/PlanCoverageEstimator.cpp" />
+        <option value="$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.cpp" />
+        <option value="$PROJECT_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp" />
       </list>
     </option>
   </component>
@@ -574,6 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,13 +618,6 @@
           <folding>
             <element signature="e#76#95#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -678,14 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="27" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -761,6 +747,22 @@
           <folding>
             <element signature="e#93#127#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/CameraEstimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Utility_Functions/src/ImageViewerCaptureTool.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
