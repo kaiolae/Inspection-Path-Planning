@@ -81,6 +81,6 @@ plan_optimizer/build
 plan_optimizer/.idea
 viewpoints.yml
 optimize_coverage.spec
-
+plan_optimizer/cpp_wrapper/build
 
 
