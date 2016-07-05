@@ -1,10 +1,16 @@
+#Requirements:
+
+* Python 2: https://www.python.org/downloads/
+* pip : https://pip.pypa.io/en/stable/installing/
+* swig: http://www.swig.org/download.html
+
 #Quick Install
 
 To install the program, run
 
-     sudo ./setup.sh
+     sudo ./install.py
 
-in the root folder of the project.
+in the root folder of the project. Python is required.
 
 #Installation
 
