@@ -1,2 +1,6 @@
 deap
 PyYAML
+numpy
+pymsgbox
+matplotlib
+scikits.bootstrap

@@ -9,7 +9,8 @@ install_manifest.txt
 # Compiled Object files
 *.slo
 *.lo
-#*.o -> I removed this, because it may be most practical here to leave the compiled c++ files used by Python in the repo. If you prefer to compile these on each machine, remove the out-commenting here.
+*.pyc
+*.o
 
 # Precompiled Headers
 *.gch

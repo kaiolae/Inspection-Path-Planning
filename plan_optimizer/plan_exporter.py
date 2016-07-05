@@ -138,10 +138,10 @@ def exportPlanToYaml(planPath, yamlPath, indivNr, positionOffsets = None, rotati
 
     # TODO: Am I correct in rotating before translating here?
     if rotationDegreesAroundzAxis:
-        plannedPositions = generate_rotated_vectors(plannedPositions,rotationDegreesAroundzAxis)
+        plannedPositions = generate_rotated_vectors_around_z(plannedPositions,rotationDegreesAroundzAxis)
         plannedPositions = [p.tolist() for p in plannedPositions] # Method returns list of np-arrays. Converting to list of lists.
         #TODO: I think I need to rotate the positions and orientations equally here.
-        plannedOrientations = generate_rotated_vectors(plannedOrientations,rotationDegreesAroundzAxis)
+        plannedOrientations = generate_rotated_vectors_around_z(plannedOrientations,rotationDegreesAroundzAxis)
         plannedOrientations = [p.tolist() for p in plannedOrientations]
     print "Planned orientations were ", plannedOrientations
     # The returned orientation is an orientation vector (x,y,z). I need to convert this to (roll,pitch,yaw) before exporting.

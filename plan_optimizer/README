@@ -66,7 +66,7 @@ Optional arguments:
     --set_structure_viewpoint           If given, the user can define a viewpoint for this structure, from which images of plans will be shown. If not given, an already stored viewpoint will be used when available.
 
 
-Usage example: python store_plan_images results/oil_manifold
+Usage example: python store_plan_images.py results/oil_manifold
 -------------------
 plan_exporter.py
 
@@ -81,7 +81,7 @@ Optional arguments:
     --rotation_offset ROTATION_OFFSET  If given, this serves as an offset (in radians) of the plan, including the robot orientation. This could be useful if the orientation of the 3D model we
                                        planned for does not match the orientation of the real inspection target.
 
-Usage example: python optimize_coverage -i results/oil_manifold
+Usage example: python plan_exporter.py -i results/oil_manifold --position_offset 10 10 10 --rotation_offset 1.57
 
 ------------
 

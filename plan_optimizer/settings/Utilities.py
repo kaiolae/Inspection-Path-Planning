@@ -260,7 +260,9 @@ def generate_rotated_vectors_around_z(vectors, rotation_degrees):
     """
     rotated_vectors = []
     for v in vectors:
-        rotated_vectors.append(np.ndarray(np.dot(rotation_matrix(np.ndarray(0,0,1), math.radians(rotation_degrees)), v)))
+        up_vector = np.array([0,0,1])
+        dotprod = np.dot(rotation_matrix(up_vector, math.radians(rotation_degrees)), v)
+        rotated_vectors.append(np.array(dotprod))
     return rotated_vectors
 
 def generate_simplified_roll_pitch_yaw(viewing_vectors):
