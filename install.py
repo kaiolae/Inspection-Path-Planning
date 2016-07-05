@@ -5,7 +5,7 @@
 import sys
 import subprocess
 def install(package):
-    pip.main(['install', package])
+    subprocess.call(['python2 -m pip install ' + package], shell=True)
 
 def which(program):
     import os
@@ -26,13 +26,16 @@ def which(program):
     return None
 
 pip_import_success = False
-try:
-    import pip
+if which("pip"):
     print "PIP found"
     pip_import_success = True
-except ImportError:
+else:
     sys.stderr.write("The python package manager pip is missing from your system. See install instructions at https://pip.pypa.io/en/stable/installing/")
 
+if pip_import_success:
+    with open("plan_optimizer/python_dependencies.txt", 'r') as required_packages:
+        for line in required_packages:
+            install(line)
 
 if which("swig"):
     print "SWIG found"
@@ -41,7 +44,3 @@ else:
     sys.stderr.write("SWIG is missing from your system. This is needed to generate the c++ wrapper. See install instructions at http://www.swig.org/download.html")
 
 
-if pip_import_success:
-    with open("plan_optimizer/python_dependencies.txt", 'r') as required_packages:
-        for line in required_packages:
-            install(line)
