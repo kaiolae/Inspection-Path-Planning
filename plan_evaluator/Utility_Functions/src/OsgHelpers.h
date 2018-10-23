@@ -162,7 +162,7 @@ osg::Vec3d calculateViewingDirectionTowardsPrimitives(const osg::Vec3d& edgeStar
  * @param scene A 3D model we want the bounding box of.
  * @return Bounding box of the scene
  */
-osg::BoundingBox& calculateBoundingBox(osg::ref_ptr<osg::Node> scene);
+osg::BoundingBox calculateBoundingBox(osg::ref_ptr<osg::Node> scene);
 
 /**
  * Calculates the length of the longest side of the given scene.

@@ -488,7 +488,7 @@ osg::Vec3d calculateViewingDirectionTowardsPrimitives(const osg::Vec3d& edgeStar
 	}
 }
 
-osg::BoundingBox& calculateBoundingBox(osg::ref_ptr<osg::Node> scene){
+osg::BoundingBox calculateBoundingBox(osg::ref_ptr<osg::Node> scene){
 	osg::ComputeBoundsVisitor cbv;
 	osg::BoundingBox &bb(cbv.getBoundingBox());
 	scene->accept(cbv);
